@@ -28,12 +28,12 @@ When I joined in fall 2023, the department was principally using a free Otter.ai
 
 * High privacy standards with Premiere’s GDPR compliance, ensuring all transcription material is stored locally and not uploaded to the cloud.[2]
 
-{% include gallery-figure.html img="dl_01.png" alt="Excerpt of transcript with the header names Speaker Name, Start Time, End Time and Text below a portion of sample dialogue." caption="Example of transcript CSV formatting as it Exports from Adobe Premiere"  title="Visualization of citation impact over time of authors that contributed to work found in the Taylor Wilderness Research Station digital archive." width="75%" %}
+{% include gallery-figure.html img="dl_01.png" alt="Excerpt of transcript with the header names Speaker Name, Start Time, End Time and Text below a portion of sample dialogue." caption="Example of transcript CSV formatting as it exports from Adobe Premiere" width="100%" %}
 
 That said, the tool is not a panacea. While modern recordings in good conditions have extremely high transcription accuracy, poor quality recordings and interviews between two similar sounding people can require significant copyediting. While some negative perspectives of speech to text tools have to do with bias built into machine learning (Link, 2020), others stem from academic double standards expecting written transcripts to be an improved version of the audio rather than a reflection of it. This likely originates from the American roots of oral history transcription at Columbia University, where editors were encouraged to delete “false starts", audit wording, rearrange passages into topical or chronological order or delete whole sections to transform the transcript from “what might be dismissed as hearsay into a document that has much the standing of legal disposition”, essentially divorcing the transcript from the audio.(Freund, 2024) Since then, critics of this practice of "cleaning up" spoken language have emerged, pointing out how it introduces unnecessary editorial bias. As University of Kentucky’s Susan Emily Allen notes in Resisting the Editorial Ego: Editing Oral History:
 
 <blockquote class="quote">
-These texts take it upon themselves to glean "what words are meaningful?" Meaningful for whom? For the editor? Such subjectivism is not only rather irresponsible scholarship but, however well-intentioned, an attempt to legislate truth. (Allen, 1982)
+These texts take it upon themselves to glean "what words are meaningful." Meaningful for whom? For the editor? Such subjectivism is not only rather irresponsible scholarship but, however well-intentioned, an attempt to legislate truth. (Allen, 1982)
 </blockquote>
 
 ## Python Text Mining
@@ -60,11 +60,11 @@ Each section has a list of fifty associated words that the script is searching f
 
 * **Place names and how certain nationalities would refer to themselves for the geographic sections** (e.g., "Finnish", “Suomalainen”, "Finland", “Suomi”, "Helsinki", "Espoo", "Tampere", "Vantaa", "Oulu")
 
-{% include gallery-figure.html img="dl_02.png" alt="Screenshot of Visual Studio Code, displaying a section with associated words around the migration tag." caption="Complete section of the migration tag within the Python file" width="75%" %}
+{% include gallery-figure.html img="dl_02.png" alt="Screenshot of Visual Studio Code, displaying a section with associated words around the migration tag." caption="Complete section of the migration tag within the Python file" width="100%" %}
 
 These produced a total of 2,250 associated words across the 45 sections. The script then tallies these words and produces the output shown below:
 
-{% include gallery-figure.html img="dl_03.png" alt=" List of tags with their associated words tallied in descending order." caption="Example of Text Mining Tool Output (Note double hash marks have replaced asterisks to identify tags to make it easier to quickly analyze data in markdown)" width="75%" %}
+{% include gallery-figure.html img="dl_03.png" alt=" List of tags with their associated words tallied in descending order." caption="Example of Text Mining Tool Output for the Rural Women's History Project" width="100%" %}
 
 Future iterations of this template will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See **Appendix 1** for an excerpt of the current iteration of this code.
 
@@ -72,7 +72,7 @@ Future iterations of this template will modularize the General, Geographic and C
 
 Once this text mining data is produced from the combined transcripts, it is entered into a “primary tag sheet” in Google Sheets, located in the same folder as the transcripts for student workers to edit. Using the Text to Columns function, tag names are split into column A and their associated words into column B. 
 
-{% include gallery-figure.html img="dl_04.png" alt="Example of the formatted primary tags sheet with headers reading tags in column A and associated words in column B." caption="Excerpt of a formatted primary tags sheet, utilizing the text mining tool output" width="35%" %}
+{% include gallery-figure.html img="dl_04.png" alt="Example of the formatted primary tags sheet with headers reading tags in column A and associated words in column B." caption="Excerpt of a formatted primary tags sheet, utilizing the Rural Women's History Projecrt text mining tool output" width="50%" %}
 
 ## Formatting
 
@@ -82,7 +82,7 @@ The student workers then open their transcription sheet to make the following ch
 * Revising header semantics (e.g., Speaker Names to speakers, Start Time to timestamp)
 * Adding brackets to timestamps
 
-{% include gallery-figure.html img="dl_05.png" alt="Example of a formatted transcript sheet, with headers reading speaker, timestamp, End Time, words, tags, additions and subtractions, followed by a sample of dialogue" caption="Example of a Formatted Transcript Sheet" width="75%" %}
+{% include gallery-figure.html img="dl_05.png" alt="Example of a formatted transcript sheet, with headers reading speaker, timestamp, End Time, words, tags, additions and subtractions, followed by a sample of dialogue" caption="Example of a Formatted Transcript Sheet" width="100%" %}
 
 ## Apps Script
 

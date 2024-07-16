@@ -161,12 +161,12 @@
 </ul>
 
 <figure class="figure d-block text-center p-3">
-    <a class="spotlight" href="/images/dl_01.png" title="Visualization of citation impact over time of authors that contributed to work found in the Taylor Wilderness Research Station digital archive."><img data-src="/images/dl_01.png" alt="Excerpt of transcript with the header names Speaker Name, Start Time, End Time and Text below a portion of sample dialogue." style="width:75%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of transcript CSV formatting as it Exports from Adobe Premiere</figcaption></figure>
+    <a class="spotlight" href="/images/dl_01.png"><img data-src="/images/dl_01.png" alt="Excerpt of transcript with the header names Speaker Name, Start Time, End Time and Text below a portion of sample dialogue." style="width:100%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of transcript CSV formatting as it exports from Adobe Premiere</figcaption></figure>
 
 <p>That said, the tool is not a panacea. While modern recordings in good conditions have extremely high transcription accuracy, poor quality recordings and interviews between two similar sounding people can require significant copyediting. While some negative perspectives of speech to text tools have to do with bias built into machine learning (Link, 2020), others stem from academic double standards expecting written transcripts to be an improved version of the audio rather than a reflection of it. This likely originates from the American roots of oral history transcription at Columbia University, where editors were encouraged to delete “false starts”, audit wording, rearrange passages into topical or chronological order or delete whole sections to transform the transcript from “what might be dismissed as hearsay into a document that has much the standing of legal disposition”, essentially divorcing the transcript from the audio.(Freund, 2024) Since then, critics of this practice of “cleaning up” spoken language have emerged, pointing out how it introduces unnecessary editorial bias. As University of Kentucky’s Susan Emily Allen notes in Resisting the Editorial Ego: Editing Oral History:</p>
 
 <blockquote class="quote">
-These texts take it upon themselves to glean "what words are meaningful?" Meaningful for whom? For the editor? Such subjectivism is not only rather irresponsible scholarship but, however well-intentioned, an attempt to legislate truth. (Allen, 1982)
+These texts take it upon themselves to glean "what words are meaningful." Meaningful for whom? For the editor? Such subjectivism is not only rather irresponsible scholarship but, however well-intentioned, an attempt to legislate truth. (Allen, 1982)
 </blockquote>
 
 <h2 id="python-text-mining">Python Text Mining</h2>
@@ -206,12 +206,12 @@ These texts take it upon themselves to glean "what words are meaningful?" Meanin
 </ul>
 
 <figure class="figure d-block text-center p-3">
-    <a class="spotlight" href="/images/dl_02.png"><img data-src="/images/dl_02.png" alt="Screenshot of Visual Studio Code, displaying a section with associated words around the migration tag." style="width:75%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Complete section of the migration tag within the Python file</figcaption></figure>
+    <a class="spotlight" href="/images/dl_02.png"><img data-src="/images/dl_02.png" alt="Screenshot of Visual Studio Code, displaying a section with associated words around the migration tag." style="width:100%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Complete section of the migration tag within the Python file</figcaption></figure>
 
 <p>These produced a total of 2,250 associated words across the 45 sections. The script then tallies these words and produces the output shown below:</p>
 
 <figure class="figure d-block text-center p-3">
-    <a class="spotlight" href="/images/dl_03.png"><img data-src="/images/dl_03.png" alt=" List of tags with their associated words tallied in descending order." style="width:75%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of Text Mining Tool Output (Note double hash marks have replaced asterisks to identify tags to make it easier to quickly analyze data in markdown)</figcaption></figure>
+    <a class="spotlight" href="/images/dl_03.png"><img data-src="/images/dl_03.png" alt=" List of tags with their associated words tallied in descending order." style="width:100%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of Text Mining Tool Output for the Rural Women's History Project</figcaption></figure>
 
 <p>Future iterations of this template will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See <strong>Appendix 1</strong> for an excerpt of the current iteration of this code.</p>
 
@@ -220,7 +220,7 @@ These texts take it upon themselves to glean "what words are meaningful?" Meanin
 <p>Once this text mining data is produced from the combined transcripts, it is entered into a “primary tag sheet” in Google Sheets, located in the same folder as the transcripts for student workers to edit. Using the Text to Columns function, tag names are split into column A and their associated words into column B.</p>
 
 <figure class="figure d-block text-center p-3">
-    <a class="spotlight" href="/images/dl_04.png"><img data-src="/images/dl_04.png" alt="Example of the formatted primary tags sheet with headers reading tags in column A and associated words in column B." style="width:35%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Excerpt of a formatted primary tags sheet, utilizing the text mining tool output</figcaption></figure>
+    <a class="spotlight" href="/images/dl_04.png"><img data-src="/images/dl_04.png" alt="Example of the formatted primary tags sheet with headers reading tags in column A and associated words in column B." style="width:50%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Excerpt of a formatted primary tags sheet, utilizing the Rural Women's History Projecrt text mining tool output</figcaption></figure>
 
 <h2 id="formatting">Formatting</h2>
 
@@ -233,7 +233,7 @@ These texts take it upon themselves to glean "what words are meaningful?" Meanin
 </ul>
 
 <figure class="figure d-block text-center p-3">
-    <a class="spotlight" href="/images/dl_05.png"><img data-src="/images/dl_05.png" alt="Example of a formatted transcript sheet, with headers reading speaker, timestamp, End Time, words, tags, additions and subtractions, followed by a sample of dialogue" style="width:75%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of a Formatted Transcript Sheet</figcaption></figure>
+    <a class="spotlight" href="/images/dl_05.png"><img data-src="/images/dl_05.png" alt="Example of a formatted transcript sheet, with headers reading speaker, timestamp, End Time, words, tags, additions and subtractions, followed by a sample of dialogue" style="width:100%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of a Formatted Transcript Sheet</figcaption></figure>
 
 <h2 id="apps-script">Apps Script</h2>
 
