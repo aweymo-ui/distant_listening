@@ -4,15 +4,7 @@ layout: page
 gallery: true
 ---
 
-{% include gallery-figure.html img="banner.jpg" title="Presentation for UCLA Library's Captivity: Assembling Nature’s Histories, May 2024" alt=" Title card with a photo of the author and a black and white landscape photo of a distant cabin" caption="Presentation for UCLA Library's Captivity: Assembling Nature’s Histories, May 2024" %}
-
-* [Slides](https://indd.adobe.com/view/ceb21830-684e-43f7-bc07-621586bac8db)
-
-* [Site (in development)](https://www.lib.uidaho.edu/digital/taylor-archive/)
-
-* [Registration and Full Schedule](https://www.1718.ucla.edu/events/assembling-natures-histories/)
-
-* [UCLA Livestream, Friday, May 17, 2024, 12:10pm](https://www.youtube.com/@ucla-c1718cs)
+_This article will provide a case study of new processes for creating subject tags across complete oral history collections. It outlines a workflow that empowers student workers to run, modify, and expand these tags during the copyediting process. The goal is to produce richer, more accurate tagging, allowing researchers to more easily identify connections across collections. The paper provides a detailed description of the workflow, explores the challenges it addresses, shares pedagogical experiences of transcribers, and examines the limitations of data-driven, human-edited automated tagging._
 
 {% include toc.html %}
 
