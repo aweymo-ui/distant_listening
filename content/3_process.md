@@ -4,6 +4,12 @@ nav: Process
 gallery: true
 ---
 
+{% include feature/nav-menu.html sections="Premiere;Python Text Mining;Primary Tag Sheet;Formatting;Apps Script" %}
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 ## Premiere
 
 When I joined in fall 2023, the department was principally using a free Otter.ai account for transcription services with mixed success. Drawing from my previous experience working for a digital encyclopedia, I tested Adobe Premiere’s transcription tools and found it uniquely well-suited for the Oral History as Data framework. 
@@ -60,11 +66,15 @@ These produced a total of 2,250 associated words across the 45 sections. The scr
 
 {% include gallery-figure.html img="dl_03.png" alt=" List of tags with their associated words tallied in descending order." caption="Example of Text Mining Tool Output (Note double hash marks have replaced asterisks to identify tags to make it easier to quickly analyze data in markdown)" width="75%" %}
 
-## Formatting
+Future iterations of this template will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See **Appendix 1** for an excerpt of the current iteration of this code.
+
+## Primary Tag Sheet
 
 Once this text mining data is produced from the combined transcripts, it is entered into a “primary tag sheet” in Google Sheets, located in the same folder as the transcripts for student workers to edit. Using the Text to Columns function, tag names are split into column A and their associated words into column B. 
 
 {% include gallery-figure.html img="dl_04.png" alt="Example of the formatted primary tags sheet with headers reading tags in column A and associated words in column B." caption="Excerpt of a formatted primary tags sheet, utilizing the text mining tool output" width="35%" %}
+
+## Formatting
 
 The student workers then open their transcription sheet to make the following changes necessary for the Oral History as Data framework, including:
 

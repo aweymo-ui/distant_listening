@@ -1,8 +1,16 @@
 ---
-title: References
+title:
 nav: References and Appendices
 gallery: true
 ---
+
+{% include feature/nav-menu.html sections="References;Notes;About the Author;Appendices;Appendix 1. Excerpt of Python Text Mining Tool;Appendix 2. Apps Script Example for Linking Transcript to Primary Tag Sheet" %}
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
+## References
 
 Link J. Why Racial Bias Still Haunts Speech-Recognition AI. Built In; 2020 [cited 2024 Jul 8]. Available from: https://builtin.com/artificial-intelligence/racial-bias-speech-recognition-systems
 

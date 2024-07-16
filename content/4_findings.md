@@ -4,6 +4,10 @@ nav: Findings
 gallery: true
 ---
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 One of my main concerns during the testing phase was whether transcribers would find the Apps Script coding element confusing or anxiety-inducing. This was not the case. By breaking down and repairing elements of the code during our weekly meetings, I was able to demystify the process and explain the purpose of each component. Additionally, I received excellent feedback from one transcriber based on their experience, which has led to the code’s fifth iteration in just three months. 
 
 Compared to summer 2023 transcription output, there is a significant increase in both the volume, accuracy and detail of the transcriptions using these methods. In addition to the tools discussed in this article, other factors contributing to this progress may include:
