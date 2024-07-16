@@ -4,7 +4,7 @@ nav: References and Appendices
 gallery: true
 ---
 
-{% include feature/nav-menu.html sections="References;Notes;About the Author;Appendices;Appendix 1. Excerpt of Python Text Mining Tool;Appendix 2. Apps Script Example for Linking Transcript to Primary Tag Sheet" %}
+{% include feature/nav-menu.html sections="References;Notes;Appendices;Appendix 1. Excerpt of Python Text Mining Tool;Appendix 2. Apps Script Example for Linking Transcript to Primary Tag Sheet;About the Author" %}
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
@@ -25,10 +25,6 @@ Allen SE. Resisting the editorial ego: editing oral history. Oral Hist Rev. 1982
 [2] Speech to Text in Premiere Pro FAQ. Adobe; [cited 2024 Jul 8]. Available from: https://helpx.adobe.com/content/help/en/premiere-pro/using/speech-to-text-faq.html
 
 [3] Department of Commerce and Labor, Bureau of Statistics. Thirteenth Census of the United States: 1910. Statistics for Idaho. Washington (DC): Government Printing Office; 1913. [cited 2024 Jul 8]. Available from: https://www2.census.gov/library/publications/decennial/1910/abstract/statistics-for-idaho.pdf
-
-## About the Author
-
-Andrew Weymouth is the Digital Initiatives Librarian at University of Idaho, specializing in static web design to curate the institution’s special collections and partner with faculty and students on fellowship projects. His work spans digital scholarship projects at the universities of Oregon and Washington and the Tacoma Northwest Room archives, including long form audio public history projects, architectural databases, oral history and network visualizations. He writes about labor, architecture, underrepresented communities and using digital methods to survey equity in archival collections. 
 
 ## Appendices
 
@@ -240,3 +236,6 @@ function fillTags() {
   tagsColumn.setValues(transcriptTags);
 }
 ```
+## About the Author
+
+Andrew Weymouth is the Digital Initiatives Librarian at University of Idaho, specializing in static web design to curate the institution’s special collections and partner with faculty and students on fellowship projects. His work spans digital scholarship projects at the universities of Oregon and Washington and the Tacoma Northwest Room archives, including long form audio public history projects, architectural databases, oral history and network visualizations. He writes about labor, architecture, underrepresented communities and using digital methods to survey equity in archival collections. 
