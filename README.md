@@ -1,2 +1,2 @@
-## Humanizing Nature Research History with Static Web Technology
-Presentation for UCLA Library's Captivity: Assembling Nature’s Histories, March 2024
+## Distant Listening: Using Python and Apps Scripts to Text Mine and Tag Oral History Collections
+Article submission for Code4Lib, Summer 2024
