@@ -50,11 +50,11 @@ Moving away from the speech to text tools the department had been working with, 
 
 {% include gallery-figure.html img="dl_01.png" alt="Excerpt of transcript with the header names Speaker Name, Start Time, End Time and Text below a portion of sample dialogue." caption="Example of transcript CSV formatting as it exports from Adobe Premiere" width="100%" %}
 
-That said, the tool is not perfect. While modern recordings in good conditions have extremely high transcription accuracy, poor quality recordings and interviews between two similar sounding people can require significant copyediting. Recent work by the Matt Miller of the Library of Congress has me very interested in creating custom speech to text tools using Whisper(.cpp) to possibly help improve on these inaccuracies.[3] 
+That said, the tool is not perfect. While modern recordings in good conditions have extremely high transcription accuracy, poor quality recordings and interviews between two similar sounding people can require significant copyediting. Recent work by Matt Miller of the Library of Congress has me very interested in creating custom speech to text tools using Whisper(.cpp) to possibly help improve on these inaccuracies.[3] 
 
 While some negative perspectives of speech to text tools have to do with bias built into machine learning (Link, 2020), others stem from academic double standards expecting written transcripts to be an improved version of the audio rather than a reflection of it. Some of these notions may have origins in the earliest American academic oral history transcription standards of Columbia University, where editors were encouraged to delete “false starts", audit wording, rearrange passages into topical or chronological order or delete whole sections to transform the transcript from “what might be dismissed as hearsay into a document that has much the standing of legal disposition”, essentially divorcing the transcript from the audio.(Freund, 2024) 
 
-Since then, critics of this practice of "cleaning up" spoken language have emerged, pointing out how it introduces unnecessary editorial bias. As University of Kentucky’s Susan Emily Allen notes in _Resisting the Editorial Ego: Editing Oral History_:
+Since then, critics of this practice of "cleaning up" oral history transcripts have emerged, pointing out how it introduces unnecessary editorial bias. As University of Kentucky’s Susan Emily Allen notes in _Resisting the Editorial Ego: Editing Oral History_:
 
 <blockquote class="quote">
 "These texts take it upon themselves to glean 'what words are meaningful.' Meaningful for whom? For the editor? Such subjectivism is not only rather irresponsible scholarship but, however well-intentioned, an attempt to legislate truth." (Allen, 1982)
@@ -70,7 +70,7 @@ After using the web based text mining tool Voyant while developing subject tags 
 
 Once the CSVs of the transcript are added to a folder in the Python workspace, the code begins with importing Pandas library for data manipulation, the Natural Language Toolkit and TextBlob for language processing and sentiment analysis. Additionally, Regular Expressions and the ‘**collections.Counter**’ function are added for text mining and tallying results. 
 
-Next, the ‘**preprocess_text**’ function removes words of four characters or fewer, eliminates punctuation, and converts all text to lowercase. CSV file paths are constructed, and the text data is concatenated into a single string corpus. Stopwords are removed, word frequency is counted and the 100 most frequent words are generated when the code is run. 
+Next, the ‘**preprocess_text**’ function removes words of four characters or fewer, eliminates punctuation, and converts all text to lowercase. CSV file paths are constructed, and the text data is concatenated into a single string corpus. Stopwords are removed, word frequency is counted and the 100 most frequent words and phrases are generated when the code is run. 
 
 Below this header material in the Python file are three text mining categories:
 
@@ -82,7 +82,7 @@ Below this header material in the Python file are three text mining categories:
 
 Each of these sections have a list of fifty associated words and phrases that the script is searching for within the combined transcription corpus. These were generated using Chatgpt with the following qualifications:
 
-* **The word or phrase is only associated with one section.** For example, regarding the sections _agriculture_ and _animals_, the word "pasture" would be excluded since it could refer to both the land used for grazing animals and also the act of animals engaged in land management. 
+* **The word or phrase is only associated with one section.** For example, regarding the sections _agriculture_ and _animals_, the word "pasture" would be excluded since it could refer to both the land used for grazing animals and also the act of animals grazing. 
 
 * **Exclude homographs (words that are spelled the same but have different meanings)**. For example, sow refers both to an adult female pig and the agricultural act of planting seeds in the ground. 
 
@@ -106,7 +106,7 @@ After making some minor adjustments to the individual transcript that has been g
 
 - Change the URL of their primary tag sheet on line 13, then save and run the code. 
 
-Now the individual transcript is connected to the Primary Tag Sheet, which will automatically search the text column for these associated words and fill in the tag column of the transcript with that section.
+Now the individual transcript is connected to the Primary Tag Sheet, which will automatically search the text column for these associated words and fill in the tag column of the transcript with that data.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
