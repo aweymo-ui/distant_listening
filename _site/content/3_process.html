@@ -187,16 +187,18 @@
     <p>Free non-English language packs, enabling the creation of the department’s first Spanish and French language oral history collections.</p>
   </li>
   <li>
-    <p>High privacy standards with Premiere’s GDPR compliance, ensuring all transcription material is stored locally and not uploaded to the cloud.[2]</p>
+    <p>Privacy standards with Premiere’s GDPR compliance, ensuring all transcription material is stored locally and not uploaded to the cloud.[2]</p>
   </li>
 </ul>
 
 <figure class="figure d-block text-center p-3">
     <a class="spotlight" href="/images/dl_01.png"><img data-src="/images/dl_01.png" alt="Excerpt of transcript with the header names Speaker Name, Start Time, End Time and Text below a portion of sample dialogue." style="width:100%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of transcript CSV formatting as it exports from Adobe Premiere</figcaption></figure>
 
-<p>That said, the tool is not perfect. While modern recordings in good conditions have extremely high transcription accuracy, poor quality recordings and interviews between two similar sounding people can require significant copyediting. While some negative perspectives of speech to text tools have to do with bias built into machine learning (Link, 2020), others stem from academic double standards expecting written transcripts to be an improved version of the audio rather than a reflection of it.</p>
+<p>That said, the tool is not perfect. While modern recordings in good conditions have extremely high transcription accuracy, poor quality recordings and interviews between two similar sounding people can require significant copyediting. Recent work by Matt Miller of the Library of Congress has me very interested in creating custom speech to text tools using Whisper(.cpp) to possibly help improve on these inaccuracies.[3]</p>
 
-<p>Some of these notions may have origins in the earliest American academic oral history transcription standards of Columbia University, where editors were encouraged to delete “false starts”, audit wording, rearrange passages into topical or chronological order or delete whole sections to transform the transcript from “what might be dismissed as hearsay into a document that has much the standing of legal disposition”, essentially divorcing the transcript from the audio.(Freund, 2024) Since then, critics of this practice of “cleaning up” spoken language have emerged, pointing out how it introduces unnecessary editorial bias. As University of Kentucky’s Susan Emily Allen notes in <em>Resisting the Editorial Ego: Editing Oral History</em>:</p>
+<p>While some negative perspectives of speech to text tools have to do with bias built into machine learning (Link, 2020), others stem from academic double standards expecting written transcripts to be an improved version of the audio rather than a reflection of it. Some of these notions may have origins in the earliest American academic oral history transcription standards of Columbia University, where editors were encouraged to delete “false starts”, audit wording, rearrange passages into topical or chronological order or delete whole sections to transform the transcript from “what might be dismissed as hearsay into a document that has much the standing of legal disposition”, essentially divorcing the transcript from the audio.(Freund, 2024)</p>
+
+<p>Since then, critics of this practice of “cleaning up” oral history transcripts have emerged, pointing out how it introduces unnecessary editorial bias. As University of Kentucky’s Susan Emily Allen notes in <em>Resisting the Editorial Ego: Editing Oral History</em>:</p>
 
 <blockquote class="quote">
 "These texts take it upon themselves to glean 'what words are meaningful.' Meaningful for whom? For the editor? Such subjectivism is not only rather irresponsible scholarship but, however well-intentioned, an attempt to legislate truth." (Allen, 1982)
@@ -212,7 +214,7 @@
 
 <p>Once the CSVs of the transcript are added to a folder in the Python workspace, the code begins with importing Pandas library for data manipulation, the Natural Language Toolkit and TextBlob for language processing and sentiment analysis. Additionally, Regular Expressions and the ‘<strong>collections.Counter</strong>’ function are added for text mining and tallying results.</p>
 
-<p>Next, the ‘<strong>preprocess_text</strong>’ function removes words of four characters or fewer, eliminates punctuation, and converts all text to lowercase. CSV file paths are constructed, and the text data is concatenated into a single string corpus. Stopwords are removed, word frequency is counted and the 100 most frequent words are generated when the code is run.</p>
+<p>Next, the ‘<strong>preprocess_text</strong>’ function removes words of four characters or fewer, eliminates punctuation, and converts all text to lowercase. CSV file paths are constructed, and the text data is concatenated into a single string corpus. Stopwords are removed, word frequency is counted and the 100 most frequent words and phrases are generated when the code is run.</p>
 
 <p>Below this header material in the Python file are three text mining categories:</p>
 
@@ -232,7 +234,7 @@
 
 <ul>
   <li>
-    <p><strong>The word or phrase is only associated with one section.</strong> For example, regarding the sections <em>agriculture</em> and <em>animals</em>, the word “pasture” would be excluded since it could refer to both the land used for grazing animals and also the act of animals engaged in land management.</p>
+    <p><strong>The word or phrase is only associated with one section.</strong> For example, regarding the sections <em>agriculture</em> and <em>animals</em>, the word “pasture” would be excluded since it could refer to both the land used for grazing animals and also the act of animals grazing.</p>
   </li>
   <li>
     <p><strong>Exclude homographs (words that are spelled the same but have different meanings)</strong>. For example, sow refers both to an adult female pig and the agricultural act of planting seeds in the ground.</p>
@@ -247,7 +249,7 @@
 <figure class="figure d-block text-center p-3">
     <a class="spotlight" href="/images/dl_03.png"><img data-src="/images/dl_03.png" alt=" List of tags with their associated words tallied in descending order." style="width:100%;" class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Example of Text Mining Tool Output for the Rural Women's History Project</figcaption></figure>
 
-<p>Future iterations of this repository will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See <a href="https://aweymo-ui.github.io/distant_listening/content/5_references_apendices.html#appendix-1-excerpt-of-python-text-mining-tool">Appendix 1</a> for an excerpt of this script or visit <a href="https://github.com/Scholarly-Projects/transcript_mining_base" target="_blank" rel="noopener">the Git</a> to view in full.</p>
+<p>Future iterations of this repository will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See <a href="https://aweymo-ui.github.io/distant_listening/content/5_references_apendices.html#appendix-1-excerpt-of-python-text-mining-tool">Appendix 1</a> for an excerpt of this script or visit <a href="https://github.com/Scholarly-Projects/transcript_mining_base" target="_blank" rel="noopener">the GitHub repository</a> to view code in full.</p>
 
 <h2 id="apps-script-connection-and-customization">Apps Script Connection and Customization</h2>
 
@@ -267,7 +269,7 @@
   </li>
 </ul>
 
-<p>Now the individual transcript is connected to the Primary Tag Sheet, which will automatically search the text column for these associated words and fill in the tag column of the transcript with that section.</p>
+<p>Now the individual transcript is connected to the Primary Tag Sheet, which will automatically search the text column for these associated words and fill in the tag column of the transcript with that data.</p>
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>

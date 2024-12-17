@@ -46,7 +46,7 @@ Moving away from the speech to text tools the department had been working with, 
 
 * Free non-English language packs, enabling the creation of the department's first Spanish and French language oral history collections.
 
-* High privacy standards with Premiere’s GDPR compliance, ensuring all transcription material is stored locally and not uploaded to the cloud.[2]
+* Privacy standards with Premiere’s GDPR compliance, ensuring all transcription material is stored locally and not uploaded to the cloud.[2]
 
 {% include gallery-figure.html img="dl_01.png" alt="Excerpt of transcript with the header names Speaker Name, Start Time, End Time and Text below a portion of sample dialogue." caption="Example of transcript CSV formatting as it exports from Adobe Premiere" width="100%" %}
 
@@ -92,7 +92,7 @@ These text mining categories and sections produce a total of 2,250 associated wo
 
 {% include gallery-figure.html img="dl_03.png" alt=" List of tags with their associated words tallied in descending order." caption="Example of Text Mining Tool Output for the Rural Women's History Project" width="100%" %}
 
-Future iterations of this repository will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See [Appendix 1](https://aweymo-ui.github.io/distant_listening/content/5_references_apendices.html#appendix-1-excerpt-of-python-text-mining-tool) for an excerpt of this script or visit [the Git](https://github.com/Scholarly-Projects/transcript_mining_base){:target="_blank" rel="noopener"} to view in full.
+Future iterations of this repository will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See [Appendix 1](https://aweymo-ui.github.io/distant_listening/content/5_references_apendices.html#appendix-1-excerpt-of-python-text-mining-tool) for an excerpt of this script or visit [the GitHub repository](https://github.com/Scholarly-Projects/transcript_mining_base){:target="_blank" rel="noopener"} to view code in full.
 
 ## Apps Script Connection and Customization
 
