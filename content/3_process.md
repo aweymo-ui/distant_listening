@@ -82,7 +82,7 @@ Each of these sections have a list of fifty associated words and phrases that th
 
 * **The word or phrase is only associated with one section.** For example, regarding the sections _agriculture_ and _animals_, the word "pasture" would be excluded since it could refer to both the land used for grazing animals and also the act of animals engaged in land management. 
 
-* **Exclude homographs (words that are spelled the same but have different meanings)**. For example, sow referring both to an adult female pig and the agricultural act of planting seeds in the ground. 
+* **Exclude homographs (words that are spelled the same but have different meanings)**. For example, sow refers both to an adult female pig and the agricultural act of planting seeds in the ground. 
 
 * **Place names and how certain nationalities would refer to themselves for the geographic sections.** For example, "Philippines", "Filipino", "Tagalog...",  "Norwegian", "Norway", "Oslo..." or "Japanese", "Japan", "Tokyo", etc. 
 
@@ -90,15 +90,15 @@ These text mining categories and sections produce a total of 2,250 associated wo
 
 {% include gallery-figure.html img="dl_03.png" alt=" List of tags with their associated words tallied in descending order." caption="Example of Text Mining Tool Output for the Rural Women's History Project" width="100%" %}
 
-Future iterations of this repository will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See [Appendix 1](https://aweymo-ui.github.io/distant_seven/content/5_references_apendices.html#appendix-1-excerpt-of-python-text-mining-tool) for an excerpt of the this script or visit [the Git](https://github.com/Scholarly-Projects/transcript_mining_base){:target="_blank" rel="noopener"} to view in full.
+Future iterations of this repository will modularize the General, Geographic and Custom sections for easier navigation instead of its current form as a single, expansive Python file. See [Appendix 1](https://aweymo-ui.github.io/distant_listening/content/5_references_apendices.html#appendix-1-excerpt-of-python-text-mining-tool) for an excerpt of this script or visit [the Git](https://github.com/Scholarly-Projects/transcript_mining_base){:target="_blank" rel="noopener"} to view in full.
 
 ## Apps Script Connection and Customization
 
 Once this text mining data is produced, it can be copied and pasted into a “primary tag sheet” in Google Sheets, located in the same folder as the transcripts for student workers to access and edit. Using the `Text to Columns` function, tag names are split into `column A` and their associated words into `column B`. 
 
-{% include gallery-figure.html img="dl_04.png" alt="Example of the formatted primary tags sheet with headers reading tags in column A and associated words in column B." caption="Excerpt of a formatted primary tags sheet, utilizing the Rural Women's History Projecrt text mining tool output" width="50%" %}
+{% include gallery-figure.html img="dl_04.png" alt="Example of the formatted primary tags sheet with headers reading tags in column A and associated words in column B." caption="Excerpt of a formatted primary tags sheet, utilizing the Rural Women's History Project text mining tool output" width="50%" %}
 
-After making some minor adjustments to the individual transcript that has been generated using Premiere necessary for the Oral History as Data framework, student workers access the Apps Script extension located in the drop down menu. Transcribers then enter the code (see [Appendix 2](https://aweymo-ui.github.io/distant_seven/content/5_references_apendices.html#appendix-2-apps-script-example-for-linking-transcript-to-primary-tag-sheet){:target="_blank" rel="noopener"}), and make two minor adjustments: 
+After making some minor adjustments to the individual transcript that has been generated using Premiere necessary for the Oral History as Data framework, student workers access the Apps Script extension located in the drop down menu. Transcribers then enter the code (see [Appendix 2](https://aweymo-ui.github.io/distant_listening/content/5_references_apendices.html#appendix-2-apps-script-example-for-linking-transcript-to-primary-tag-sheet){:target="_blank" rel="noopener"}), and make two minor adjustments: 
 
 - Change the sheet name of the transcript they are editing on line 6 
 
